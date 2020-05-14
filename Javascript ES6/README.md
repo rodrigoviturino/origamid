@@ -1,4 +1,4 @@
 # Javascript ES6+
-    # Projetos
+* Projetos
     - Projeto Animais Fantásticos
     - Slide
