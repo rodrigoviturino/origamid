@@ -23,7 +23,6 @@ function initTabNav() {
   }
 }
 
-
 initTabNav();
 
 function initAccordion() {
@@ -80,9 +79,9 @@ function initAnimacaoScroll() {
 
   if (sections.length) {
     function animaScroll() {
-      let altura = window.innerHeight * 0.5;
+      let alturaJanela = window.innerHeight * 0.5;
       sections.forEach((section) => {
-        let sectionTop = section.getBoundingClientRect().top - altura;
+        let sectionTop = section.getBoundingClientRect().top - alturaJanela;
 
         if (sectionTop < 0) {
           section.classList.add("ativo");
