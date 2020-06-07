@@ -10,7 +10,7 @@ let faq = document.querySelector(".faq-lista");
 let primeiroDT = faq.querySelector("dt");
 
 // Selecione o DD referente ao primeiro DT
-let primeiroDD = primeiroDT.nextElementSibling;
+let primeiroDD = primeiroDT.nextElementSibling; // selecionado o proximo elemento
 console.log(primeiroDD.remove());
 
 // Substitua o conteúdo html de .faq pelo de .animais
