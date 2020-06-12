@@ -25,6 +25,7 @@ function limparPreco(preco) {
   // console.log(preco);
 }
 
+// Iterando com o array de numero e vamos utilizar a função para limpar
 listaPrecos.forEach((item) => {
   total += limparPreco(item);
   return total;
