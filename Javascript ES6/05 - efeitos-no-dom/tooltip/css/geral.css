@@ -24,6 +24,9 @@ body {
   background: #faf6ed;
   color: #222;
   -webkit-font-smoothing: antialiased;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -196,7 +199,7 @@ html.textoMaior {
 }
 
 @media (max-width: 700px) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
   .menu,
@@ -227,16 +230,31 @@ html.textoMaior {
   }
 }
 
-.js .js-tabContent section {
+.js [data-section="content"] section {
   display: none;
 }
 
-.js-tabContent section.ativo {
+[data-section="content"] section.ativo[data-anime="show-right"] {
   display: block !important;
-  animation: show 0.5s forwards;
+  animation: showRight 0.5s forwards;
+}
+[data-section="content"] section.ativo[data-anime="show-down"] {
+  display: block !important;
+  animation: showDown 0.5s forwards;
 }
 
-@keyframes show {
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showRight {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
@@ -247,70 +265,30 @@ html.textoMaior {
   }
 }
 
-.js .js-accordion dd {
+.js [data-accordion="anima"] dd {
   display: none;
 }
 
-.js .js-accordion dt::after {
+.js [data-accordion="anima"] dt::after {
   content: "↴";
   margin-left: 10px;
 }
 
-.js .js-accordion dt.ativo::after {
+.js [data-accordion="anima"] dt.ativo::after {
   content: "↑";
 }
 
-.js-accordion dd.ativo {
+[data-accordion="anima"] dd.ativo {
   display: block;
-  animation: slideDown 0.5s forwards;
+  animation: showRight 0.5s forwards;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0px;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
-
-.js .js-scroll {
+.js [data-anima="scroll"] {
   opacity: 0;
   transition: all 0.5s;
   transform: translate3d(-30px, 0, 0);
 }
-.js .js-scroll.ativo {
+.js [data-anima="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-}
-
-.show-down {
-  animation: showDown 0.5s forwards;
-}
-.show-right {
-  animation: showRight 0.5s forwards;
-}
-
-@keyframes showDown {
-  from {
-    top: -10px;
-    transition: all 0.5s;
-  }
-  to {
-    top: 0px;
-    transition: all 0.5s;
-  }
-}
-
-@keyframes showRight {
-  from {
-    left: -20px;
-    transition: all 0.5s;
-  }
-  to {
-    left: 0px;
-    transition: all 0.5s;
-  }
 }
