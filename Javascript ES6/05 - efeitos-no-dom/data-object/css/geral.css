@@ -293,17 +293,7 @@ html.textoMaior {
   transform: translate3d(0, 0, 0);
 }
 
-.aberto::after {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #3fa;
-  border: solid 2px #333;
-  margin-left: 5px;
-}
-.fechado::after {
+[data-semana]::after {
   content: '';
   display: inline-block;
   width: 6px;
@@ -312,4 +302,7 @@ html.textoMaior {
   border-radius: 50px;
   background-color: #e54;
   border: solid 1px #333;
+}
+[data-semana].aberto::after {
+  background-color: #3FA;
 }
