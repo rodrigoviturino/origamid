@@ -27,5 +27,5 @@ Isso significa que não podemos modificar com setAttribute
 
 # Transversing
 
-- Como navegar pelo DOM, utilizando suas propriedades e métodos.
+- Como navegar pelo DOM, utilizando suas propriedades e métodos
 - Geralmente estamos atrás de um elemento e não de qualquer node em si.
