@@ -56,8 +56,9 @@ function setValues() {
   properties.forEach((propertie) => {
     // Ativando os métodos para setar no botão os valores que está no painel
     handleStyle[propertie](localStorage[propertie]);
-    // pegando os nomes e setando com os valores do localstorage
+    // selecionando o controler do botão e pegando os valores dos campos, com isso, selecionamos o localStorage para pegar os valores e setar no controler. para ficar com os valores definidor no controle
     controles.elements[propertie].value = localStorage[propertie];
+    console.log("teste", localStorage[propertie]);
     showCss();
   });
 }
