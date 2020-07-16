@@ -35,36 +35,43 @@
 
 /**
  * .HEADERS
-    É uma propriedade que possui os cabeçalhos da requisição. É um tipo de dado iterável então podemos utilizar o forEach para vermos cada um deles.
+    É uma propriedade que possui os cabeçalhos da requisição. 
+    É um tipo de dado iterável então podemos utilizar o forEach para vermos cada um deles.
  */
 const div = document.createElement('div');
 
-fetch('https://viacep.com.br/ws/01001000/json/')
-.then(response => {
-  response.headers.forEach(console.log);
-});
+// fetch('https://viacep.com.br/ws/01001000/json/')
+// .then(response => {
+//   console.log(response.headers.forEach(console.log))
+// });
 
 
 /**
  * .STATUS E .OK
-    Retorna o status da requisição. Se foi 404, 200, 202 e mais. ok retorna um valor booleano sendo true para uma requisição de sucesso e false para uma sem sucesso.
+    Retorna o status da requisição. 
+    Se foi 404, 200, 202 e mais. ok retorna um valor booleano 
+    sendo true para uma requisição de sucesso 
+    e false para uma sem sucesso.
  */
-const div = document.createElement('div');
 
-fetch('https://viacep.com.br/ws/01001000/json/')
-.then(response => {
-  console.log(response.status, response.ok);
-  if(response.status === 404) {
-    console.log('Página não encontrada')
-  }
-});
+// fetch('https://viacep.com.br/ws/01001000/json/')
+// .then(response => {
+//   console.log(response.status, response.ok);
+//   if(response.status === 404) {
+//     console.log('Página não encontrada')
+//   }
+// });
+
 
 /**
  * .URL E .TYPE
-    .url retorna o url da requisição. .type retorna o tipo da reposta.
+    .url retorna o url da requisição. 
+        - se for tipo "Basic" é uma requisição de servidor interno
+        - se for tipo "Cors" é uma requisição de servidor de fora ou API EXTERNA
+    .type retorna o tipo da reposta.
  */
-const div = document.createElement('div');
 
+// fetch('./index.html') // basic
 fetch('https://viacep.com.br/ws/01001000/json/')
 .then(response => {
   console.log(response.type, response.url);
