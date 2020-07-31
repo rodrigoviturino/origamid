@@ -3,26 +3,32 @@
     Uma requisição HTTP é feita através de uma URL. O método padrão é o GET, mas existem outros como POST, UPDATE, DELETE, HEADER.
  */
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
+// const url = "https://jsonplaceholder.typicode.com/posts";
 // const options = {
-//   method: 'POST', // GET ( Default), PUT, DELETE
+//   method: "POST", // GET ( Default), PUT, DELETE
 //   body: '{ "aula": "JavaScript"}',
 //   headers: {
 //     "Content-Type": "application/json; charset=utf-8",
-//   }
-// }
+//   },
+// };
+const url =
+  "https://cors-anywhere.herokuapp.com/http://localhost:7000/api/v1/user";
+const options = {
+  method: "POST", // GET ( Default), PUT, DELETE
+  body: '{ "aula": "JavaScript1"}',
+  headers: {
+    "Content-Type": "application/json; charset=utf-8",
+  },
+};
 
 // HEADERS
-const options = {
-  method: 'HEAD',
-}
+// const options = {
+//   method: 'HEAD',
+// }
 
 fetch(url, options)
-.then(response => response.headers.forEach(console.log))
-.then(json => {
-  console.log(json);
-});
-
+  .then((response) => response.json())
+  .then((r) => console.log(r));
 
 /**
  * CORS
