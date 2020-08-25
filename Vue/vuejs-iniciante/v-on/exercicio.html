@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  
+  <div id="app">
+    <ul>
+
+      <li>
+        <a @click.prevent="fetchApi" href="https://cloud.iexapis.com/stable/stock/aapl/quote?token=pk_e87bb0242c2149479b7f32309c9333ae">Apple</a>
+      </li>
+  
+      <li>
+        <a @click.prevent="fetchApi" href="https://cloud.iexapis.com/stable/stock/gogl/quote?token=pk_e87bb0242c2149479b7f32309c9333ae">Google</a>
+      </li>
+  
+      <li>
+        <a @click.prevent="fetchApi" href="https://cloud.iexapis.com/stable/stock/amzn/quote?token=pk_e87bb0242c2149479b7f32309c9333ae">Amazon</a>
+      </li>
+  
+      <li>
+        <a @click.prevent="fetchApi" href="https://cloud.iexapis.com/stable/stock/ebay/quote?token=pk_e87bb0242c2149479b7f32309c9333ae">Ebay</a>
+      </li>
+  
+      <li>
+        <a @click.prevent="fetchApi" href="https://cloud.iexapis.com/stable/stock/pypl/quote?token=pk_e87bb0242c2149479b7f32309c9333ae">Paypal</a>
+      </li>
+  
+    </ul>
+
+
+    <div>
+      <p>Empresa: {{acao.companyName}}</p>
+      <p>Preço de Venda: {{acao.latestPrice}}</p>
+      <p>Valor de Mercado: {{acao.marketCap}}</p>
+    </div>
+
+  </div>
+  <!--
+    Utilizando API
+    https://cloud.iexapis.com/stable/stock/aapl/quote?token=pk_e87bb0242c2149479b7f32309c9333ae
+  
+    Adicione um evento de clique a cada <a> do html
+    acima e previna o comportamento padrão.
+  
+    Faça o fetch dos dados do href ao click e mostre na
+    interface o companyName, latestPrice, marketCap
+    -->
+<script>
+  const vm = new Vue({
+    el: "#app",
+    data: {
+      acao:{},
+    },
+    methods: {
+      fetchApi(event){
+        const url = event.currentTarget.href;
+
+        fetch(url)
+        .then((body) => body.json() )
+        .then((response) => this.acao = response)
+      },
+    }
+  });  
+</script>
+
+</body>
+</html>

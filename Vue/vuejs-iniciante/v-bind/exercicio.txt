@@ -1,0 +1,13 @@
+
+  Utilizando as API's
+  https://api.iextrading.com/1.0/stock/aapl/quote
+  https://api.iextrading.com/1.0/stock/googl/quote
+
+  - Compare o marketCap (valor de
+  mercado) entre ambas.
+
+  - Mostre o nome das empresas e o valor
+  na interace (companyName e marketCap).
+
+  - Mude a cor para verde o nome da empresa com
+  maior marketCap e vermelho a com menor.
