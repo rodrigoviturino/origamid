@@ -7,19 +7,31 @@
   <script src="vue.js"></script>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <template v-if="logado">
+      <p>Usuário Logado</p>
+      <button @click="logado = false">Deslogar</button>
+    </template>
+
+    <template v-else="logado">
+      <p>Usuário Deslogado</p>
+      <button @click="logado = true">Logar</button>
+    </template>
+
+    <!-- If: Não renderiza na tela, se for muito usado, nao é recomendado -->
+      <!-- <p v-if="logado">Usuario Logado</p> -->
+    <!-- V-show: renderiza na tela com display block/none -->
+      <!-- <p v-show="logado">Usuario Logado</p> -->
+
+  </div>
 
   <script>
-    options = {
+    const vm = new Vue({
       el: "#app",
       data: {
-        nome: "Rodrigo",
-        
+        logado: true
       }
-    }
-
-    const vm = new Vue(options);
-    console.log(vm);
+    });
   </script>
 
 </body>
