@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <!-- <li v-for="(estado,key, index) in estados">{{estado}} {{key}} {{index}}</li> -->
+      <li v-for="({nome, populacao}, key) in estados" :key="key + nome"> {{nome}} - {{populacao}} - KEY:{{key}}</li>
+    </ul>
+    <ul>
+      <li v-for="(fruta, index) in frutas">{{fruta}} {{index}} </li>
+    </ul>
+    <button @click="remover">Remover</button>
+    <button @click="modificar">Modificar</button>
+  </div>
+
+<script>
+  const vm = new Vue({
+    el: "#app",
+    data: {
+      estados: {
+        sp: {
+          populacao: "30 milhões",
+          nome: "São Paulo"
+        },
+        rj: {
+          populacao: "20 milhões",
+          nome: "Rio de Janeiro"
+        },
+        mg: {
+          populacao: "15 milhões",
+          nome: "Minas Gerais"
+        },
+      },
+      frutas: ['Laranja', 'Morango', 'Limão']
+    },
+    methods: {
+      remover(){
+        this.frutas.pop();
+      },
+      modificar(){
+        // this.frutas[0] = "Maça";
+        this.$set(this.frutas, 0, "maça");
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
