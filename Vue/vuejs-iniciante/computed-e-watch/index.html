@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  
+  
+  <div id="app">
+    <ul>
+      <li v-for="(carro) in carrosAzuis" >
+        {{carro}}
+      </li>
+      
+    </ul>
+  </div>
+  
+  <script>
+  const vm = new Vue({
+    el: "#app",
+    data: {
+      carros : [
+        {
+          marca: "VW",
+          cor: "Azul",
+        },
+        {
+          marca: "Ford",
+          cor: "Azul",
+        },
+        {
+          marca: "Ferrari",
+          cor: "Vermelho",
+        },
+        {
+          marca: "BMW",
+          cor: "Preto",
+        }
+      ]
+    },
+/*
+  *** COMPUTED ***
+  Quando precisamos modificar um dado usando JavaScript, podemos utilizar uma propriedade dentro de computed.
+*/
+    computed: {
+      carrosAzuis(){
+        return this.carros.filter(({cor}) => cor === "Azul")
+      }
+    },
+/*
+  WATCH
+  É possível ativar uma função toda vez que um dado reativo é modificado. Para isso usamos uma propriedade dentro de watch.  
+*/
+  // watch: {
+  //   contador() {
+  //     console.log(this.contador);
+  //   },
+  // }
+
+  });
+</script>
+
+</body>
+</html>
