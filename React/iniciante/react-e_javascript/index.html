@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Básico</title>
+
+    <!-- Nota: ao fazer o deploy, substitua "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+<div id="app-javascript">
+    <p>Total: <span class="total"></span> </p>
+    <p>Preço: <span class="preco"></span></p>
+    <button class="comprar">Comprar</button>
+</div>
+
+<script type="application/javascript">
+    const total = document.querySelector(".total");
+    const preco = document.querySelector(".preco");
+    const button = document.querySelector(".comprar");
+
+    let contador = 1;
+
+
+    function atualizarValores(contador){
+        total.innerText = contador;
+        preco.innerText = contador * 250;
+    }
+    atualizarValores(contador);
+
+    function handleClick(){
+        contador = contador + 1;
+        atualizarValores(contador);
+    }
+
+    button.addEventListener("click", handleClick);
+</script>
+
+
+<div id="app-react">
+
+</div>
+
+<script type="text/babel">
+    const Comprar = () => {
+        const [contador, setContador] = React.useState(1);
+
+
+        return (
+            <div>
+                <p>Total: {contador}</p>
+                <p>Preço: R$ {contador * 250}</p>
+                <button onClick={ () => setContador(contador + 1)}>Comprar</button>
+            </div>
+        )
+    }
+
+    ReactDOM.render(<Comprar/> , document.querySelector("#app-react"));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Básico</title>
+
+    <!-- Nota: ao fazer o deploy, substitua "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script type="text/babel">
+
+    const Compras = () =>{
+        const [contador, setContador] = React.useState(0);
+
+        function comprarItem(){
+            setContador(contador + 1);
+        }
+
+        return (
+            <div>
+                <button onClick={comprarItem}>Comprar</button>
+                <p>Total: {contador}</p>
+                <p>Preço: R$ {contador * 250}</p>
+            </div>
+        );
+    }
+
+
+    const Button = () =>{
+        function click(event){
+            console.log(event)
+        }
+
+        return <button onClick={click}>Comprar</button>
+    }
+
+    const Span = () => {
+        return <span>Span123</span>
+    }
+
+    const Titulo = () => {
+        return <h1>Titulo Principal </h1>
+    }
+
+    const Numero = () => {
+        const sorteio = Math.random() * 10;
+        return <p>{sorteio}</p>
+    }
+
+    const App = () => {
+        return (
+            <div>
+                React Básico <Titulo/>
+                <Button/> - numero aleatorio: <Numero/>
+                <Compras/>
+            </div>
+        )
+    }
+
+    ReactDOM.render(<App/>, document.querySelector("#app"));
+
+</script>
+
+</body>
+</html>
