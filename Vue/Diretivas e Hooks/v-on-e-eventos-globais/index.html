@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p style="position:fixed">{{totalScroll}}</p>
+  </div>
+
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data:{
+        totalScroll: 0,
+      },
+      methods: {
+        handleScroll(event){
+          console.log(event);
+          this.totalScroll = window.scrollY;
+        }
+      },
+      created() {
+        window.addEventListener("scroll", this.handleScroll);
+      }
+    });
+  </script>
+
+<style>
+  body{
+    height: 2000px;
+  }
+</style>
+</body>
+</html>

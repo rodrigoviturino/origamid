@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="color" id="cor" v-model="btn.background">
+    <label for="width">Width</label>
+    <input type="text" id="width" v-model="btn.width">
+    <label for="height">height</label>
+    <input type="text" id="height" v-model="btn.height">
+    <label for="fontSize">font Size</label>
+    <input type="text" id="fontSize" v-model="btn.fontSize">
+    <label for="fontFamily">font Family</label>
+    <input type="text" id="fontFamily" v-model="btn.fontFamily">
+
+    {{btn.background}}
+    <a href="" :style="btn">Clique</a>
+  </div>
+
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data:{
+        btn: {
+          background: "#000",
+          color: "#fff",
+          width: "100px",
+          height: "40px",
+          fontSize: "12px",
+          fontFamily: "monospace",
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
