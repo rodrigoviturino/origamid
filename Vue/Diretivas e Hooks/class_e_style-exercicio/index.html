@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso VUEjs - Exercicio </title>
-  <script src="vue.js"></script>
-</head>
-<body>
-  <div id="app">
-    <button @click="colunaAtiva = !colunaAtiva">Clique</button>
-    <ul :class="{column: colunaAtiva}" @click="gerarCor">
-      <li :style="{background: bgColor}">Sobre</li>
-      <li :style="{background: bgColor}">Produtos</li>
-      <li :style="{background: bgColor}">Serviços</li>
-      <li :style="{background: bgColor}">Contato</li>
-    </ul>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso VUEjs - Exercicio</title>
+    <script src="vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="contador++">Contador: {{contador}}</button>
+      <div>
+        <ul>
+          <li v-for="(valor, chave) in github">{{chave}}: {{valor}}</li>
+        </ul>
+      </div>
+    </div>
 
-  <script>
-    const vm = new Vue({
-      el: "#app",
-      data: {
-        colunaAtiva: false,
-        bgColor: "",
-      },
-      methods: {
-        gerarCor(){
-          const color = `hsl(${Math.random() * 360}, 100%, 50%)`;
-          this.bgColor = color,
-          console.log("mudou cor");
+    <script>
+      const vm = new Vue({
+        el: "#app",
+        data: {
+          github: {},
+          contador: 0,
         },
-      }
-    });
-  </script>
-
-<style>
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: monospace;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-  }
-  .column {
-    flex-direction: column;
-  }
-  li {
-    padding: 20px;
-    background: #84e;
-    color: white;
-    border-radius: 4px;
-    margin: 10px;
-    flex: 1;
-    text-align: center;
-  }
-</style>
-
-</body>
+        methods: {
+          fetchGithub() {
+            fetch("https://api.github.com/users/rodrigoviturino")
+              .then((body) => {
+                return body.json();
+              })
+              .then((json) => {
+                this.github = json;
+              });
+          },
+        },
+        updated() {
+          document.title = this.contador;
+        },
+        created() {
+          this.fetchGithub();
+        },
+      });
+    </script>
+  </body>
 </html>
