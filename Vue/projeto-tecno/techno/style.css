@@ -119,10 +119,12 @@ body {
 
 @keyframes produto {
   from {
-    transform: translateX(50px);
+    opacity: 0;
+    transform: translate3D(50px, 0, 0);
   }
   to {
-    transform: translateX(0px);
+    opacity: 1;
+    transform: translate3D(0px, 0, 0);
   }
 }
 
@@ -179,24 +181,24 @@ body {
 
 /* REVIEWS */
 
-.reviews {
+.avaliacoes {
   grid-column: 2;
 }
 
-.reviews_subtitulo {
+.avaliacoes_subtitulo {
   font-size: 1.75rem;
 }
 
-.review {
+.avaliacao {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
 }
 
-.review_descricao {
+.avaliacao_descricao {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.review_usuario {
+.avaliacao_usuario {
   font-weight: bold;
   line-height: 0px;
 }
@@ -371,7 +373,7 @@ body {
   .modal_btn {
     margin-top: 20px;
   }
-  .reviews {
+  .avaliacoes {
     grid-column: 1;
     padding: 10px;
   }
