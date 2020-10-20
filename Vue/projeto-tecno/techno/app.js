@@ -2,6 +2,7 @@ const vm = new Vue({
   el: "#app",
   data: {
     produtos: [],
+    produto: false
   },
   filters: {
     precoBR(valor){
@@ -20,6 +21,13 @@ const vm = new Vue({
         .then((resposta) => {
           return (this.produtos = resposta);
         });
+    },
+    fetchProduto(id){
+      fetch(`./api/produtos/${id}/dados.json`)
+      .then((body) => body.json())
+      .then((response) => {
+        return this.produto = response
+      })
     },
   },
   created() {

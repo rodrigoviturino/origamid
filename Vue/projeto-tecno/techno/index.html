@@ -9,12 +9,13 @@
   </head>
   <body>
     <div id="app">
+      <p>{{produto}}</p>
       <section class="produtos">
-        <div v-for="produto in produtos" :key="produto.id" class="produto">
-          <img :src="produto.image" />
+        <div v-for="item in produtos" @click="fetchProduto(item.id)" :key="item.id" class="produto">
+          <img :src="item.image" :alt="item.nome" class="produto_img"/>
           <div class="produto_info">
-            <span class="produto_preco">{{produto.preco | precoBR}}</span>
-            <h2 class="produto_titulo">{{produto.nome}}</h2>
+            <span class="produto_preco">{{item.preco | precoBR}}</span>
+            <h2 class="produto_titulo">{{item.nome}}</h2>
           </div>
         </div>
       </section>
