@@ -13,13 +13,12 @@
       <header class="header">
         <img class="log" src="./assets/techno.svg" alt=""/>
         <div class="carrinho_menu">{{carrinhoTotal | precoBR}} | {{carrinho.length}}</div>
-
-<!--        <ul>-->
-<!--          <li v-for="(item, index) in carrinho">-->
-<!--            {{item}} | {{index}}-->
-<!--            <button @click="removerItem(index)">X</button>-->
-<!--          </li>-->
-<!--        </ul>-->
+        <ul>
+          <li v-for="(item, index) in carrinho">
+            {{item}} | {{index}}
+            <button @click="removerItem(index)">X</button>
+          </li>
+        </ul>
       </header>
 
       <section class="modal" v-if="produto" @click="fecharModal">
@@ -66,6 +65,12 @@
           </div>
         </div>
       </section>
+
+      <!-- Alerta -->
+      <div class="alerta" :class="{ativo: alertaAtivo}">
+        <p class="alerta_mensagem">{{mensagemAlerta}}</p>
+      </div>
+
     </div>
     <script src="./app.js"></script>
   </body>
