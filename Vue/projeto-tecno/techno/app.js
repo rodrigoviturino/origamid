@@ -3,6 +3,7 @@ const vm = new Vue({
   data: {
     produtos: [],
     produto: false,
+    carrinho: [],
   },
   filters: {
     precoBR(valor) {
@@ -13,6 +14,17 @@ const vm = new Vue({
     },
     tituloUper(titulo) {
       return titulo.toUpperCase(titulo);
+    },
+  },
+  computed: {
+    carrinhoTotal() {
+      let total = 0;
+      if (this.produto.lenght) {
+        this.produto.forEach((item) => {
+          total += item.preco;
+        });
+      }
+      return total;
     },
   },
   methods: {
@@ -43,6 +55,14 @@ const vm = new Vue({
       if (event.target === event.currentTarget) {
         this.produto = false;
       }
+    },
+    adicionarItem() {
+      this.produto.estoque--;
+      const { id, nome, preco } = this.produto;
+      this.carrinho.push({ id, nome, preco });
+    },
+    removerItem(index) {
+      this.carrinho.splice(index, 1); // começa do indice X até o 1 = 1 item removido
     },
   },
   created() {

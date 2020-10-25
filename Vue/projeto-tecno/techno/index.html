@@ -9,6 +9,36 @@
   </head>
   <body>
     <div id="app">
+      <header class="header">
+        <img src="./assets/techno.svg" class="logo" alt="Logo Techno" />
+        <div class="carrinho_menu">
+          {{carrinhoTotal | precoBR}} | {{carrinho.lenght}}
+        </div>
+        <ul>
+          <li v-for="(item, index) in carrinho">
+            {{item.nome}}
+            <button @click="removerItem(index)">X</button>
+          </li>
+        </ul>
+      </header>
+      <!-- Produto -->
+      <section class="produtos">
+        <div
+          v-for="item in produtos"
+          @click="abrirModal(item.id)"
+          :key="item.id"
+          class="produto"
+        >
+          <img :src="item.image" :alt="item.nome" class="produto_img" />
+          <div class="produto_info">
+            <span class="produto_preco">{{item.preco | precoBR}}</span>
+            <h2 class="produto_titulo">{{item.nome}}</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Produto -->
+
+      <!-- Modal Produto -->
       <section class="modal" v-if="produto" @click="fecharModal">
         <div class="modal_container">
           <div class="modal_img">
@@ -19,7 +49,17 @@
             <span class="modal_preco">{{produto.preco}}</span>
             <h2 class="modal_titulo">{{produto.nome}}</h2>
             <p>{{produto.descricao}}</p>
-            <button class="modal_btn">Adicionar Item</button>
+            <p>{{produto.estoque}}</p>
+            <button
+              class="modal_btn"
+              @click="adicionarItem"
+              v-if="produto.estoque > 0"
+            >
+              Adicionar Item
+            </button>
+            <button class="modal_btn esgotado" v-else disabled>
+              Produto Esgotado
+            </button>
           </div>
 
           <!-- Section Avaliações -->
@@ -36,21 +76,7 @@
           </div>
         </div>
       </section>
-
-      <section class="produtos">
-        <div
-          v-for="item in produtos"
-          @click="abrirModal(item.id)"
-          :key="item.id"
-          class="produto"
-        >
-          <img :src="item.image" :alt="item.nome" class="produto_img" />
-          <div class="produto_info">
-            <span class="produto_preco">{{item.preco | precoBR}}</span>
-            <h2 class="produto_titulo">{{item.nome}}</h2>
-          </div>
-        </div>
-      </section>
+      <!-- end Modal Produto -->
     </div>
     <script src="./app.js"></script>
   </body>
