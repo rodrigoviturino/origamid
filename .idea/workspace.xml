@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67e334d6-b66b-4b40-a405-527c44d6f79f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/React/iniciante/adicionar-react/idnex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/javascript-01/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/javascript-01/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/javascript-02/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/javascript-02/quadrado.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/javascript-02/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/react-basico/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/react-e_javascript/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/iniciante/webpack-e-babel/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/public/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/src/jsx-exercicio/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/src/jsx/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/src/jsx/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,14 +58,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/React/iniciante" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/React/iniciante/ambiente_default/appreact/src/jsx-exercicio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrador\Desktop\Cursos 2020\Origamid\React\iniciante\ambiente_default\appreact\src\jsx-exercicio" />
+      <recent name="C:\Users\Administrador\Desktop\Cursos 2020\Origamid\React\iniciante\ambiente_default\appreact\src\jsx" />
       <recent name="C:\Users\Administrador\Desktop\Cursos 2020\Origamid\React\iniciante" />
       <recent name="C:\Users\Administrador\Desktop\Cursos 2020\Origamid\React\iniciante\javascript-01" />
     </key>
@@ -94,7 +87,11 @@
       <workItem from="1600194953456" duration="4220000" />
       <workItem from="1600219928715" duration="4208000" />
       <workItem from="1600278036063" duration="2809000" />
-      <workItem from="1600281557954" duration="4296000" />
+      <workItem from="1600281557954" duration="5552000" />
+      <workItem from="1600289378950" duration="2533000" />
+      <workItem from="1600379890554" duration="692000" />
+      <workItem from="1600400094408" duration="1291000" />
+      <workItem from="1600454373749" duration="7645000" />
     </task>
     <servers />
   </component>
@@ -114,10 +111,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="828" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600291111698">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600291111698" />
     <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600281475223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600281475223" />
+    <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600290828302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600290828302" />
     <state x="797" y="188" width="707" height="458" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1598371837502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -126,11 +131,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="120" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600287488931" />
-    <state x="694" y="24" key="SettingsEditor" timestamp="1600287492288">
+    <state x="445" y="40" key="SettingsEditor" timestamp="1600379974121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="19" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598370019634" />
-    <state x="694" y="24" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600287492288" />
+    <state x="445" y="40" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600379974121" />
     <state x="994" y="221" key="cloudConfig.SelfSettingsDialog" timestamp="1598371634046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
