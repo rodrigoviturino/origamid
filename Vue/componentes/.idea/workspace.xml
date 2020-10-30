@@ -71,55 +71,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c07515be-8b7e-4b35-a2e6-6475765af8bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/public/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/jsx-array-exercicio/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/jsx-array/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/jsx-exercicio/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/jsx/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/jsx/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/src/propriedades/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/ambiente_default/appreact/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../React/iniciante/npx-create-react-app/meuapp/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/BotaoContador.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiCotacao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto-tecno/techno/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-tecno/techno/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto-tecno/techno/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-tecno/techno/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto-tecno/techno/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-tecno/techno/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto-tecno/techno/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-tecno/techno/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/props/exercicio/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/props/exercicio/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/props/exercicio/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiCotacao.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +104,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/componentes-basicos/exercicio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/props/exercicio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -156,12 +114,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos\exercicio\componentes" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\props\exercicio" />
       <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos\exercicio" />
       <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos\exercicio\componentes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -173,6 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603914112296</updated>
       <workItem from="1603914113842" duration="10981000" />
+      <workItem from="1603940801274" duration="2982000" />
+      <workItem from="1604004092035" duration="3253000" />
     </task>
     <servers />
   </component>
@@ -189,15 +150,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="761" y="27" key="#HTML" timestamp="1604007838427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="27" key="#HTML/0.0.1920.1040@0.0.1920.1040" timestamp="1604007838427" />
     <state x="1178" y="229" key="#JavaScript" timestamp="1603921786859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1178" y="229" key="#JavaScript/0.0.1920.1040@0.0.1920.1040" timestamp="1603921786859" />
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1603920768186">
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604007698598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603920768186" />
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604007698598" />
   </component>
 </project>

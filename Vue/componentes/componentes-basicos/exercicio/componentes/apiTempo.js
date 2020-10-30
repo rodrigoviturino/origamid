@@ -5,7 +5,7 @@ export default {
       temperaturaMaxima: "0",
     }
   },
-      template: `<p>São Paulo, máxima de: {{temperaturaMaxima}}</p>`,
+  template: `<p>São Paulo, máxima de: {{temperaturaMaxima}}</p>`,
   methods: {
     puxarTempo(){
       fetch("https://www.metaweather.com/api/location/455827")
