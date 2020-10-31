@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <tempo-hoje></tempo-hoje>
+    <acao-hoje></acao-hoje>
+  </div>
+
+<script type="module">
+  import TempoHoje from "./componentes/apiTempo.js";
+  import AcaoHoje from "./componentes/apiMercado.js";
+
+  Vue.component("TempoHoje", TempoHoje)
+
+  const vm = new Vue({
+    el: "#app",
+    components: {
+      AcaoHoje
+    }
+  });
+</script>
+
+</body>
+</html>

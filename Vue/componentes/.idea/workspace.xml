@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="ChangeListManager">
-    <list default="true" id="9932ab40-e1d6-4641-b105-2b1a783a8a52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-=======
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -76,26 +70,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e53ae08-59ad-413c-b3b9-d62039e4dacb" name="Default Changelist" comment="">
+    <list default="true" id="c07515be-8b7e-4b35-a2e6-6475765af8bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/props/exercicio/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/props/exercicio/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/props/exercicio/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
->>>>>>> f0f96380dd3719d5fed45f2493536fea9fb63e3e
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiCotacao.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectId" id="1jO9prCWbaYrBDzKkea8Pgcfkv2" />
-=======
-  <component name="ProjectId" id="1jKmiWFv12Vz0v6RfjX4Av8dHpm" />
->>>>>>> f0f96380dd3719d5fed45f2493536fea9fb63e3e
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jWJrGCjt7BqHcLktbRpfmirR7u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -105,38 +104,42 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/props/exercicio" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\props\exercicio" />
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos\exercicio" />
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Cursos 2020\origamid\Vue\componentes\componentes-basicos\exercicio\componentes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="9932ab40-e1d6-4641-b105-2b1a783a8a52" name="Default Changelist" comment="" />
-      <created>1603664464632</created>
+      <changelist id="c07515be-8b7e-4b35-a2e6-6475765af8bf" name="Default Changelist" comment="" />
+      <created>1603914112296</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603664464632</updated>
-      <workItem from="1603664472728" duration="398000" />
-=======
-      <changelist id="2e53ae08-59ad-413c-b3b9-d62039e4dacb" name="Default Changelist" comment="" />
-      <created>1603561286215</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1603561286215</updated>
-<<<<<<< HEAD
-      <workItem from="1603561288076" duration="8745000" />
-=======
-      <workItem from="1603561288076" duration="8038000" />
->>>>>>> f0f96380dd3719d5fed45f2493536fea9fb63e3e
->>>>>>> 26ceaef511f45cbf256dcddd8c5a40fd328424f8
+      <updated>1603914112296</updated>
+      <workItem from="1603914113842" duration="10981000" />
+      <workItem from="1603940801274" duration="2982000" />
+      <workItem from="1604004092035" duration="3253000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-=======
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -147,6 +150,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
->>>>>>> f0f96380dd3719d5fed45f2493536fea9fb63e3e
+  <component name="WindowStateProjectService">
+    <state x="761" y="27" key="#HTML" timestamp="1604007838427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="27" key="#HTML/0.0.1920.1040@0.0.1920.1040" timestamp="1604007838427" />
+    <state x="1178" y="229" key="#JavaScript" timestamp="1603921786859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1178" y="229" key="#JavaScript/0.0.1920.1040@0.0.1920.1040" timestamp="1603921786859" />
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604007698598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604007698598" />
+  </component>
 </project>

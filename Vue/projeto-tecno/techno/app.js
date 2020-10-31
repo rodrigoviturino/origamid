@@ -4,6 +4,7 @@ const vm = new Vue({
     produtos: [],
     produto: false,
     carrinho: [],
+    carrinhoAtivo: true,
     mensagemAlerta: "Item Adicionado",
     alertaAtivo: false,
   },
@@ -16,6 +17,17 @@ const vm = new Vue({
     },
     tituloUper(titulo) {
       return titulo.toUpperCase(titulo);
+    },
+  },
+  computed: {
+    carrinhoTotal() {
+      let total = 0;
+      if (this.produto.lenght) {
+        this.produto.forEach((item) => {
+          total += item.preco;
+        });
+      }
+      return total;
     },
   },
   methods: {
@@ -47,56 +59,73 @@ const vm = new Vue({
         this.produto = false;
       }
     },
-    adicionarItem(){
-      this.produto.estoque--;
-      const {id, nome, preco} = this.produto;
-      this.carrinho.push({id, nome, preco});
-      this.alerta(`${nome} foi adicionado.`);
-
+    clickForaCarrinho(event){
+      if(event.target === event.currentTarget){
+        this.produto = false;
+      }
     },
-    removerItem(index){
+    adicionarItem() {
+      this.produto.estoque--;
+      const { id, nome, preco } = this.produto;
+      this.carrinho.push({ id, nome, preco });
+      this.alerta(`${nome} foi adicionado.`);
+    },
+    removerItem(index) {
       this.carrinho.splice(index, 1);
     },
-    checarLocalStorage(){
-      if(window.localStorage.carrinho){
+    checarLocalStorage() {
+      if (window.localStorage.carrinho) {
         this.carrinho = JSON.parse(window.localStorage.carrinho);
       }
     },
-    alerta(mensagem){
+    compararEstoque(){
+
+      const items = this.carrinho.filter((item) => {
+        console.log(item.id);
+        if(item.id === this.produto.id){
+          return true;
+        }
+      })
+      this.produto.estoque = this.produto.estoque - items.length;
+      console.log("items:", items);
+    },
+    alerta(mensagem) {
       this.mensagemAlerta = mensagem;
       this.alertaAtivo = true;
       setTimeout(() => {
         this.alertaAtivo = false;
-      },1500)
+      }, 1500);
     },
-    router(){
+    router() {
       const hash = document.location.hash;
-      if(hash){
+      if (hash) {
         this.fetchProduto(hash.replace("#", ""));
       }
-    }
+    },
   },
   // Método Computed é reativo
   computed: {
-    carrinhoTotal(){
+    carrinhoTotal() {
       let total = 0;
-      if(this.carrinho.length){
-        this.carrinho.forEach( (item) => {
+      if (this.carrinho.length) {
+        this.carrinho.forEach((item) => {
           total += item.preco;
         });
       }
       return total;
-    }
+    },
   },
   watch: {
-    produto(){
+    produto() {
       document.title = this.produto.nome || "Techno";
       let hash = this.produto.id || "";
-      history.pushState(null, null, `#${hash}`)
+      history.pushState(null, null, `#${hash}`);
+
+      this.compararEstoque();
     },
-    carrinho(){
+    carrinho() {
       window.localStorage.carrinho = JSON.stringify(this.carrinho);
-    }
+    },
   },
   created() {
     this.fetchProdutos();

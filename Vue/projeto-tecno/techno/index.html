@@ -9,10 +9,11 @@
   </head>
   <body>
     <div id="app">
-
       <header class="header">
-        <img class="log" src="./assets/techno.svg" alt=""/>
-        <div class="carrinho_menu">{{carrinhoTotal | precoBR}} | {{carrinho.length}}</div>
+        <img class="log" src="./assets/techno.svg" alt="" />
+        <div class="carrinho_menu">
+          {{carrinhoTotal | precoBR}} | {{carrinho.length}}
+        </div>
         <ul>
           <li v-for="(item, index) in carrinho">
             {{item}} | {{index}}
@@ -20,7 +21,6 @@
           </li>
         </ul>
       </header>
-
       <section class="modal" v-if="produto" @click="fecharModal">
         <div class="modal_container">
           <div class="modal_img">
@@ -32,8 +32,16 @@
             <h2 class="modal_titulo">{{produto.nome}}</h2>
             <p>{{produto.descricao}}</p>
             <p>{{produto.estoque}}</p>
-            <button v-if="produto.estoque > 0" class="modal_btn" @click="adicionarItem">Adicionar Item</button>
-            <button v-else class="modal_btn esgotado" disabled>Produto Esgotado</button>
+            <button
+              class="modal_btn"
+              @click="adicionarItem"
+              v-if="produto.estoque > 0"
+            >
+              Adicionar Item
+            </button>
+            <button class="modal_btn esgotado" v-else disabled>
+              Produto Esgotado
+            </button>
           </div>
 
           <!-- Section Avaliações -->
@@ -66,10 +74,32 @@
         </div>
       </section>
 
+        <!-- Modal Carrinho -->
+        <section class="carrinho_modal" :class="{ativo: carrinhoAtivo}" @click="clickForaCarrinho">
+            <div class="carrinho_container">
+                <button class="carrinho_fechar" @click="carrinhoAtivo = false"> X </button>
+                <h2 class="carrinho_titulo">Carrinho</h2>
+                <div v-if="carrinho.length >0">
+                    <ul class="carrinho_lista">
+                        <li v-for="(item, index) in carrinho" class="carrinho_item">
+                            <p>{{item.nome}}</p>
+                            <p class="carrinho_preco"> {{item.preco | precoBR}}</p>
+                            <button class="carrinho_remover" @click="removerItem(index)">X</button>
+                        </li>
+                    </ul>
+                    <p class="carrinho_total">Total: {{carrinhoTotal | precoBR}}</p>
+                    <button class="carrinho_finalizar">Finalizar Compra</button>
+                </div>
+                <p v-else>Carrinho está vázio.</p>
+            </div>
+        </section>
+        <!-- end Modal Carrinho -->
+
       <!-- Alerta -->
       <div class="alerta" :class="{ativo: alertaAtivo}">
         <p class="alerta_mensagem">{{mensagemAlerta}}</p>
       </div>
+      <!-- end Alerta -->
 
     </div>
     <script src="./app.js"></script>
