@@ -71,18 +71,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c07515be-8b7e-4b35-a2e6-6475765af8bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/props/exercicio/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/props/exercicio/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/props/exercicio/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiCotacao.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiMercado.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes-basicos/exercicio/componentes/apiTempo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/props/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/props/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,6 +132,7 @@
       <workItem from="1603914113842" duration="10981000" />
       <workItem from="1603940801274" duration="2982000" />
       <workItem from="1604004092035" duration="3253000" />
+      <workItem from="1604155394810" duration="3589000" />
     </task>
     <servers />
   </component>

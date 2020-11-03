@@ -7,19 +7,47 @@
   <script src="vue.js"></script>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
 
-  <script>
-    options = {
-      el: "#app",
-      data: {
-        nome: "Rodrigo",
-        
-      }
+    <lista-produtos :frutas="lista" titulo="vamos tricolor"></lista-produtos>
+  </div>
+
+  <script type="module">
+
+    const ItemProduto = {
+      name: "ItemProduto",
+      props: ["nomeFruta"],
+      template: `
+        <li>
+            <h2>{{nomeFruta}}</h2>
+            Nome da fruta é: {{nomeFruta}}
+        </li>
+      `,
     }
 
-    const vm = new Vue(options);
-    console.log(vm);
+    const ListaProdutos = {
+      name: "ListaProdutos",
+      props: ["frutas", "titulo"],
+      components: {
+        ItemProduto
+      },
+      template: `
+        <ul>
+            <h2>{{titulo}}</h2>
+            <item-produto v-for="(fruta, index) in frutas" :key="fruta + index" :nomeFruta="fruta"></item-produto>
+        </ul>
+      `
+    }
+
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        lista:["Uva", "Morango", "Kiwi"]
+      },
+      components: {
+        ListaProdutos
+      }
+    });
   </script>
 
 </body>
