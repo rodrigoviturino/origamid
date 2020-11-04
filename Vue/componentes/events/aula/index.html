@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso VUEjs - Events</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    {{mensagem}}
+    <meu-botao @origamid="mostrarMensagem"></meu-botao>
+  </div>
+
+<script>
+  const MeuBotao = {
+    name: "MeuBotao",
+    data() {
+      return {
+        totalClientes: 22,
+      }
+    },
+    template: `
+      <button @click="handleClick">Enviar</button>
+    `,
+    methods: {
+      handleClick(){
+      //   this.$emit("origamid")
+      }
+    },
+    created() {
+      setTimeout(() => {
+        this.$emit("origamid", this.totalClientes)
+      },2000)
+    },
+  }
+
+  const vm = new Vue({
+    el: "#app",
+    data: {
+      mensagem: "",
+      totalClientes: 0
+    },
+    components: {
+      MeuBotao,
+    },
+    methods: {
+      mostrarMensagem(event){
+        console.log(event);
+        this.totalClientes = event
+      }
+    },
+  });
+</script>
+
+</body>
+</html>
